@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+  <title>Venus Perú</title>
+  <!--Codificacion-->
+  <meta charset="UTF-8" />
+  <!--Escalado de Pagina-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Compatibilidad de Pagina con Edge-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Favicon de la pagina-->
+  <link rel="icon" href="img/ico/venus_ico.png" type="image/png" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+  <!--icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/24175a27d1.js"></script>
+  <!--CSS Propio-->
+  <link rel="stylesheet" type="text/css" href="../../css/venus.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/venus.php" />
+  <!-- Scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+  <!-- CABECERA -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light font-weight-bold high" href="/">VENUS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light " href="../../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " href="../nosotros.html">ACERCA DE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light activo" href="../tienda.html">TIENDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../contactanos.html">CONTACTANOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN CABECERA -->
+  <!-- Boton Subir -->
+  <button onclick="topFunction()" id="subir" title="Subir">
+    <i class="fas fa-angle-up fa-lg"></i>
+  </button>
+  <!-- FIN Boton Subir -->
+  <h1><u>LIBRO DE RECLAMACIONES</u></h1>
+<div class="container">
+<form action="mailto:fabriziocf_96@hotmail.com" method="post" enctype="text/plain">
+<fieldset>
+<legend><p>Datos personales</p></legend>
+
+<label for="nombre"><p>Nombre:</p></label><input type="text" name="nombre" id="nombre" maxlength="20" value=""/>
+<label for="apellido"><p>Apellidos:<p></label><input type="text" name="apellidos" id="apellido" maxlength="50" value=""/>
+<label for="contacto"><p>Numero de Contacto:</p></label><input type="text" name="contacto" id="contacto" maxlength="50" value=""/>
+<label for="correo"><p>Correo electronico:</p></label><input type="text" name="correo" id="correo" maxlength="50" value=""/>
+<p>Tipo de Documento: <select name="tipo_documento" > <option>Seleccione tipo de documento</option> <option>DNI</option> <option>Pasaporte</option> <option>Carnet de extranjeria</option> <option>Otros</option> </select> </p>
+<label for="documento"><p>Documento:</p></label><input type="text" name="documento" id="documento" maxlength="8" value=""/>
+</fieldset>
+<fieldset>
+<legend><p>Area de reclamos y/o queja</p></legend>
+<fieldset>
+<legend><p>Tipo de reclamo</p></legend> 
+<label for="servicio"><p><input type="radio" name="reclamo" value="servicio" id="servicio"/>Servicio </p></label> 
+<label for="producto"><p><input type="radio" name="reclamo" value="producto" id="producto"/>Producto </p></label>
+    <label for="atencion"><p><input type="radio" name="reclamo" value="atencion" id="atencion"/>Atencion </p></label> 
+<label for="otros"><p><input type="radio" name="reclamo" value="otros" id="otros" checked="checked"/>Otros </p></label>
+</fieldset>
+<label for="comentario"><p>Comentario:</p></label><textarea name="comentario" id="comentario" rows="5" cols="50"></textarea>
+</fieldset>
+
+    <p><label for="aceptar_terminos"><input type="checkbox" name="aceptar_terminos" id="aceptar_terminos">Si, acepto brindar mis datos personales y estoy de acuerdo con los <a href="terminos_condiciones.html">términos y condiciones.</a>a></label></p> 
+    <p><label for="suscripcion"><input type="checkbox" name="suscripcion" id="suscripcion">Deseo contar con una suscripción diaria sobre moda y nuevos disiños de la marca</label></p>
+<input type="submit" value="Enviar"/>
+<input type="reset" value="Borrar todo"/>
+
+</form>
+<p>Nota: toda informacion sera confidencial, y sera manejada unicamente por la empresa.</p>
+</div>
+    
+    
+
+  <!-- PIE de PAGINA-->
+  <footer>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 borderfoot">
+          <p class="h1foot">Atencion al Cliente:</p>
+          <p class="foot">Telf: 255 5712 | Telf: 255 5573 Anexo 109</p>
+          <p class="foot">Email: servicioalcliente@venusperu.com</p>
+        </div>
+        <div class="col-sm-6">
+          <p class="h1foot">Contacto Marketing:</p>
+          <p class="foot">E-mail: mkt@venusperu.com</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row mt-2">
+      <div class="col-sm-12 text-center">
+        <a class="text-dark h4" href="terminos.html">Terminos y Condiciones </a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+        <a class="text-dark h4" href="politicas.html">Politicas de cambio y devolucion</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+        <a class="text-dark h4" href="politicas.html">Proteccion de datos</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+        <a class="text-dark h4" href="#">Libro de reclamaciones</a>
+      </div>
+    </div>
+    <hr />
+    <br />
+    <div class="container-fluid text-white bg-black ">
+      <div class="row align-items-center">
+        <div class="col-sm-4  text-center  p-4">
+          <p class="h6 px-5">
+            Venus Peru © 2019 TODOS LOS DERECHOS RESERVADOS
+          </p>
+        </div>
+        <div class="col-sm-4  text-center p-4 ">
+          <p class="h2 ">Venus Perú</p>
+        </div>
+        <div class="col-sm-4  p-4">
+          <div class="row">
+            <div class="col-6 text-right">
+              <a href="https://web.facebook.com/venusropa.peru/" target="_blank" class="link-icon"><i
+                  class="fab fa-facebook-f fa-2x"></i></a>
+            </div>
+            <div class="col-6  text-left">
+              <a href="https://www.instagram.com/venusropa.peru/?hl=es-la" target="_blank" class="link-icon"><i
+                  class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN PIE de PAGINA-->
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

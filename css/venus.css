@@ -1,0 +1,324 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+/** INICIO Puntos de Quiebre **/
+@media (min-width: 991.98px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 75%;
+  }
+  ul li {
+    background-color: rgba(247, 247, 247, 0.55);
+  }
+  /**#icon-bar {
+    display: none !important;
+  }**/
+}
+/** FIN Puntos de Quiebre **/
+
+/** Etiquetas del Cuerpo **/
+body {
+  background-color: #f7f7f7;
+  font-family: "Antipasto";
+  font-size: 18px;
+}
+.header {
+  background-image: url("../assets/img/portada1.jpg");
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: cover;
+  background-position: center top;
+  /**background-attachment: fixed;**/
+}
+@font-face {
+  font-family: "Antipasto";
+  src: url("../assets/fonts/Antipasto.woff");
+}
+
+nav div ul li a {
+  font-size: 23px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.activo {
+  background-size: 100% 2px;
+}
+
+nav div ul li a:hover/**, ul li a:focus**/ {
+  background-size: 100% 2px;
+}
+/** FIN Etiquetas del Cuerpo **/
+
+/** Clases del Cuerpo **/
+
+.high {
+  font-size: 45px;
+  letter-spacing: 15px;
+}
+
+/** FIN Clases del Cuerpo **/
+
+.bg-purple {
+  background: rgb(238, 215, 217);
+  background: radial-gradient(
+    circle,
+    rgba(238, 215, 217, 1) 0%,
+    rgba(247, 247, 247, 1) 58%
+  );
+}
+
+#subir {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  scroll-behavior: smooth;
+}
+/**
+html{
+  scroll-behavior: smooth;
+}**/
+
+.-facebook-f {
+  color: #4267b2;
+}
+.-facebook-f:hover {
+  color: #375799;
+}
+.-twitter {
+  color: #1da1f2;
+}
+.-twitter:hover {
+  color: #1991d6;
+}
+
+.-youtube {
+  color: #ff0000;
+}
+.-youtube:hover {
+  color: darkred;
+}
+.h1foot {
+  font-weight: bold;
+  font-size: 16px;
+}
+.foot {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.borderfoot {
+  border-right: 4px dotted #dee2e6;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.link-icon {
+  color: white;
+}
+.link-icon:hover {
+  color: #b6c9cc;
+}
+
+.bg-f7 {
+  background-color: #f7f7f7 !important;
+  font-size: 30px;
+}
+
+.contenedor {
+  height: 600px;
+}
+
+a.activo2 {
+  border-bottom: 2px solid black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/** GALERIA **/
+
+.galeria {
+  vertical-align: middle;
+}
+
+.conten {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  margin-top: -200px;
+  margin-right: 0px;
+  color: Black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: aliceblue;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-conten {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active1,
+.demo:hover {
+  opacity: 1;
+}
+
+/**/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: Black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff4dff;
+  color:black;
+    transition-duration: 0.3s;
+}
+/**
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.columna2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+} **/
+
+label{
+   font-family: 'Acme', sans-serif;
+    font-size: 1.15em; 
+}
+input[type=reset] {
+  background-color: Black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #ff4dff;
+  color:black;
+    transition-duration: 0.3s;}
+
+
+.diseno{
+background-color: white;
+box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+margin-bottom: 25px;
+margin-right: 25px;
+    
+}
+
+.contenedor{
+    text-align:center;
+    padding: 10px 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+    justify-content: center;
+}
